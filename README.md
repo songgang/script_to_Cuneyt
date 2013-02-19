@@ -1,7 +1,9 @@
 script_to_Cuneyt
 ================
 
-script_to_CuneytNotes for Penn PICSL Pipeline for Cuneyt Yilmaz and Connie Hsia’s Canine Data
+script_to_Cuneyt
+
+Notes for Penn PICSL Pipeline for Cuneyt Yilmaz and Connie Hsia’s Canine Data
 
 PICSL Pipeline
 
@@ -24,9 +26,9 @@ http://www.itksnap.org/pmwiki/pmwiki.php?n=Convert3D.Documentation
 	
 2.	Scripts
 Scripts of bash and perl are saved in
-https://github.com/songgang/SongPipeline/tree/master/cuneyt_jan2012
 
-under the folder SongPipeline/cuneyt_jan2012
+https://github.com/songgang/script_to_Cuneyt
+under the folder cuneyt
 
 3.	Execute Scripts (bash + perl)
 
