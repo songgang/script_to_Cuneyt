@@ -2,16 +2,19 @@
 #$ -S /bin/bash
 
 
-commonScriptDir=/home/songgang/project/Cuneyt/Jan2012/script/SongPipeline/common
+# commonScriptDir=/home/songgang/project/Cuneyt/Jan2012/script/SongPipeline/common
 
 
 #
-origDir=/home/songgang/project/Cuneyt/Jan2012/input/gzipped
-maskDir=/home/songgang/project/Cuneyt/Jan2012/output
-regDir=/home/songgang/project/Cuneyt/Jan2012/output
+origDir=/home/songgang/project/Cuneyt/Jan2012/input_Mar13_2013
+maskDir=/home/songgang/project/Cuneyt/Jan2012/output_Mar13_2013
+regDir=/home/songgang/project/Cuneyt/Jan2012/output_Mar13_2013
 #imgList="
 #0002/Series0017
 #"
+
+
+
 
 : <<adfadsfasdfadsffdfd
 regList="
@@ -22,7 +25,7 @@ PRONE-10cm
 adfadsfasdfadsffdfd
 
 # block comment, remove colon in the next line
-# : <<adfadsfasdfadsffdfd
+: <<adfadsfasdfadsffdfd
 regList="
 ALVIN-POST
 PRONE-30cm
@@ -120,8 +123,69 @@ GILMER-PRE
 SUPINE-30cm
 SUPINE-10cm
 "
-# adfadsfasdfadsffdfd
+adfadsfasdfadsffdfd
 
+
+
+
+
+regList="
+Hondo-POST
+PRONE-30cm
+PRONE-10cm
+
+Hondo-POST
+SUPINE-30cm
+SUPINE-10cm
+
+Hondo-PRE
+PRONE-30cm
+PRONE-10cm
+
+Hondo-PRE
+SUPINE-30cm
+SUPINE-10cm
+
+Irving-POST
+PRONE-30cm
+PRONE-10cm
+
+Irving-POST
+SUPINE-30cm
+SUPINE-10cm
+
+Irving-PRE
+PRONE-30cm
+PRONE-10cm
+
+Irving-PRE
+SUPINE-30cm
+SUPINE-10cm
+
+Jasper-POST
+PRONE-30cm
+PRONE-10cm
+
+Jasper-POST
+SUPINE-30cm
+SUPINE-10cm
+
+Jasper-PRE
+PRONE-30cm
+PRONE-10cm
+
+Jasper-PRE
+SUPINE-30cm
+SUPINE-10cm
+
+Kirby-POST
+PRONE-30cm
+PRONE-10cm
+
+Kirby-POST
+SUPINE-30cm
+SUPINE-10cm
+"
 
 regList=( $regList ) # convert to array from string
 nbImg=`echo ${#regList[@]} / 3 | bc` # get number of elements in array

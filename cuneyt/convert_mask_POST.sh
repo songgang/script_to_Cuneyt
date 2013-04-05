@@ -36,13 +36,13 @@ mkdir -p $subout
 outmask=$subout/$imgname-lungmask.nii.gz
 
 
-l1=$inputDir/MaskFiles/${lobes[0]}-$imgname.hdr
-l2=$inputDir/MaskFiles/${lobes[1]}-$imgname.hdr
-l3=$inputDir/MaskFiles/${lobes[2]}-$imgname.hdr
+l1=$inputDir/MaskFiles/$imgname-${lobes[0]}.hdr
+l2=$inputDir/MaskFiles/$imgname-${lobes[1]}.hdr
+l3=$inputDir/MaskFiles/$imgname-${lobes[2]}.hdr
 
 $C3D $l1 -threshold 976 976 1 0 -as A -clear $l2 -threshold 976 976 1 0 -push A -add -as A -clear $l3 -threshold 976 976 1 0 -push A -add -as A -clear -push A -threshold 1 Inf 1 0 -o $outmask
 
 ln -s $inputImg $subout/$imgname.hdr
-ln -s $(dirname $inputImg)/$(basename $inputImg .hdr).img.gz $subout/$imgname.img.gz
+ln -s $(dirname $inputImg)/$(basename $inputImg .hdr).img $subout/$imgname.img
 
 
