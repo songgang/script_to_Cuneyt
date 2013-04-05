@@ -131,60 +131,60 @@ adfadsfasdfadsffdfd
 
 regList="
 Hondo-POST
-PRONE-30cm
-PRONE-10cm
+Prone-30cm
+Prone-10cm
 
 Hondo-POST
-SUPINE-30cm
-SUPINE-10cm
+Supine-30cm
+Supine-10cm
 
 Hondo-PRE
-PRONE-30cm
-PRONE-10cm
+Prone-30cm
+Prone-10cm
 
 Hondo-PRE
-SUPINE-30cm
-SUPINE-10cm
+Supine-30cm
+Supine-10cm
 
 Irving-POST
-PRONE-30cm
-PRONE-10cm
+Prone-30cm
+Prone-10cm
 
 Irving-POST
-SUPINE-30cm
-SUPINE-10cm
+Supine-30cm
+Supine-10cm
 
 Irving-PRE
-PRONE-30cm
-PRONE-10cm
+Prone-30cm
+Prone-10cm
 
 Irving-PRE
-SUPINE-30cm
-SUPINE-10cm
+Supine-30cm
+Supine-10cm
 
 Jasper-POST
-PRONE-30cm
-PRONE-10cm
+Prone-30cm
+Prone-10cm
 
 Jasper-POST
-SUPINE-30cm
-SUPINE-10cm
+Supine-30cm
+Supine-10cm
 
 Jasper-PRE
-PRONE-30cm
-PRONE-10cm
+Prone-30cm
+Prone-10cm
 
 Jasper-PRE
-SUPINE-30cm
-SUPINE-10cm
+Supine-30cm
+Supine-10cm
 
 Kirby-POST
-PRONE-30cm
-PRONE-10cm
+Prone-30cm
+Prone-10cm
 
 Kirby-POST
-SUPINE-30cm
-SUPINE-10cm
+Supine-30cm
+Supine-10cm
 "
 
 regList=( $regList ) # convert to array from string
