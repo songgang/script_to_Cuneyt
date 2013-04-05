@@ -406,8 +406,8 @@ function AnalyzeDeformation()
 fixProcessed=${tempDir}/${fixImageName}-preprocessed.nii.gz
 movProcessed=${tempDir}/${movImageName}-preprocessed.nii.gz
 
-# preprocess $fixImage $fixMask $fixProcessed $tempDir
-# preprocess $movImage $movMask $movProcessed $tempDir
+preprocess $fixImage $fixMask $fixProcessed $tempDir
+preprocess $movImage $movMask $movProcessed $tempDir
 
 
 # step 2: registration
@@ -419,12 +419,12 @@ movProcessed=${tempDir}/${movImageName}-preprocessed.nii.gz
 # temp:
 #  $tempDir
 
-# register $fixProcessed $fixMask $fixImage $movProcessed $movMask $movImage $outputPre $tempDir
+register $fixProcessed $fixMask $fixImage $movProcessed $movMask $movImage $outputPre $tempDir
 
 
 
 
-# ComposeDeformation $outputPre $fixProcessed $movProcessed $fixMask $fixImage $movImage
+ComposeDeformation $outputPre $fixProcessed $movProcessed $fixMask $fixImage $movImage
 
 # step 3: post analyze the deformation field
 AnalyzeDeformation $fixImage $fixMask $fixLobeMaskDir $outputPre
