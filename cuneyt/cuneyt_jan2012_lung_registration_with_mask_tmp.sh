@@ -356,7 +356,7 @@ function AnalyzeDeformation()
   for (( i=0; i<${#lobes[*]}; i++))
   do
     lobe=${lobes[$i]};
-    lobemask=$FIXEDLOBEMASKDIR/$lobe-$fixImageName.hdr;
+    lobemask=$FIXEDLOBEMASKDIR/$fixImageName-$lobe.hdr;
     echo $lobemask
     if [ ! -f $lobemask ];
     then
