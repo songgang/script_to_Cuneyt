@@ -48,7 +48,8 @@ padRadius=10
 # paths for all binary utilities
 C3D=/home/songgang/pkg/bin/c3d
 UTILITIESDIR=/home/songgang/project/tustison/Utilities/gccrel
-ANTSDIRECTORY=/home/songgang/project/ANTS/gccrel-Nov-06-2011/Examples
+# ANTSDIRECTORY=/home/songgang/project/ANTS/gccrel-Nov-06-2011/Examples
+ANTSDIRECTORY=/home/songgang/project/ANTS/gccrel/bin
 
 
 # default temp working directory in the sub directory
