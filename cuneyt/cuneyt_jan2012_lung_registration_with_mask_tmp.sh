@@ -124,7 +124,7 @@ function register()
   local outputPre=$7
   local tempDir=$8
 
-  local iterations="200x200x200x200x50"
+  local iterations="200x200x200x200x200"
   # local Miterations="1x0x0x0x0"
   local metricRadius=2
   local gradientStep=0.25
@@ -153,7 +153,7 @@ function register()
   echo "mov: $MOVINGIMAGE"
   echo "----"
   echo $ANTS $DIMENSION --output-naming ${OUTPUT}initaff --image-metric $AFFINEMETRIC --number-of-iterations 0 --transformation-model $TRANSFORMATION --regularization $REGULARIZATION --affine-metric-type MI --number-of-affine-iterations 10000x10000x10000x10000 > ${OUTPUT}ANTSCall.txt
-  echo $ANTS $DIMENSION --output-naming $OUTPUT --image-metric $IMAGEMETRIC --number-of-iterations $ITERATIONS --transformation-model  $TRANSFORMATION --regularization $REGULARIZATION --affine-metric-type MI  --initial-affine ${OUTPUT}initaffAffine.txt --continue-affine false --number-of-threads 8 --use-recursive-gaussian $USERECURSIVEGAUSSIAN >> ${OUTPUT}ANTSCall.txt
+  echo /usr/bin/time $ANTS $DIMENSION --output-naming $OUTPUT --image-metric $IMAGEMETRIC --number-of-iterations $ITERATIONS --transformation-model  $TRANSFORMATION --regularization $REGULARIZATION --affine-metric-type MI --initial-affine ${OUTPUT}initaffAffine.txt --continue-affine false >> ${OUTPUT}ANTSCall.txt
   echo "initial date:" `date` >> ${OUTPUT}ANTSCall.txt
   echo
   echo initial affine registration
@@ -169,7 +169,9 @@ function register()
   echo deformable registration
   echo ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  MYDO /usr/bin/time $ANTS $DIMENSION --output-naming $OUTPUT --image-metric $IMAGEMETRIC --number-of-iterations $ITERATIONS --transformation-model  $TRANSFORMATION --regularization $REGULARIZATION --affine-metric-type MI --initial-affine ${OUTPUT}initaffAffine.txt --continue-affine false --number-of-threads 8 --use-recursive-gaussian $USERECURSIVEGAUSSIAN
+#  MYDO /usr/bin/time $ANTS $DIMENSION --output-naming $OUTPUT --image-metric $IMAGEMETRIC --number-of-iterations $ITERATIONS --transformation-model  $TRANSFORMATION --regularization $REGULARIZATION --affine-metric-type MI --initial-affine ${OUTPUT}initaffAffine.txt --continue-affine false --number-of-threads 8 --use-recursive-gaussian $USERECURSIVEGAUSSIAN
+
+MYDO /usr/bin/time $ANTS $DIMENSION --output-naming $OUTPUT --image-metric $IMAGEMETRIC --number-of-iterations $ITERATIONS --transformation-model  $TRANSFORMATION --regularization $REGULARIZATION --affine-metric-type MI --initial-affine ${OUTPUT}initaffAffine.txt --continue-affine false
 
   echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
   echo 

@@ -241,7 +241,7 @@ for (( i=0; i<nbImg; i++)); do
 
 #  bash cuneyt_jan2012_lung_registration_with_mask_tmp.sh \
 
-   qsub -pe serial 4 -e $regOutputDir -o $regOutputDir -j y \
+   qsub -pe serial 8 -e $regOutputDir -o $regOutputDir -j y \
         cuneyt_jan2012_lung_registration_with_mask_tmp.sh \
         $origFixImagePath \
         $origMovImagePath \
