@@ -241,7 +241,7 @@ for (( i=0; i<nbImg; i++)); do
 
 #  bash cuneyt_jan2012_lung_registration_with_mask_tmp.sh \
 
-   qsub -pe serial 8 -o $regOutputDir -e $regOutputDir \
+   qsub -pe serial 8 -o $regOutputDir -e $regOutputDir -j y\
         cuneyt_jan2012_lung_registration_with_mask_tmp.sh \
         $origFixImagePath \
         $origMovImagePath \
@@ -252,7 +252,7 @@ for (( i=0; i<nbImg; i++)); do
 
 #  . cuneyt_jan2012_analyze_deformation.sh $origFixImagePath $maskFixPath $fixLobeMaskPath $regOutputPrefix
 
-break;
+# break;
 
 done;
 
