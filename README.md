@@ -1,6 +1,9 @@
 script_to_Cuneyt
 ================
 
+Note: file names have to be matched exactly
+
+
 script_to_Cuneyt
 
 Notes for Penn PICSL Pipeline for Cuneyt Yilmaz and Connie Hsia’s Canine Data
