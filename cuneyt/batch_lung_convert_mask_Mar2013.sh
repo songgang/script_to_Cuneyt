@@ -9,6 +9,14 @@ dstDir=/home/songgang/project/Cuneyt/Jan2012/output_Mar13_2013
 currentDir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )";
 echo $currentDir;
 
+
+pathList="
+Kirby-POST/Prone-10cm/Kirby-POST-Prone-10cm
+Kirby-POST/Prone-30cm/Kirby-POST-Prone-30cm
+Kirby-POST/Supine-10cm/Kirby-POST-Supine-10cm
+Kirby-POST/Supine-30cm/Kirby-POST-Supine-30cm
+"
+:<<djfkdjfkdjfkdfjdsd
 pathList="
 Hondo-POST/Prone-10cm/Hondo-POST-Prone-10cm
 Hondo-POST/Prone-30cm/Hondo-POST-Prone-30cm
@@ -42,6 +50,7 @@ Kirby-POST/Prone-30cm/Kirby-POST-Prone-30cm
 Kirby-POST/Supine-10cm/Kirby-POST-Supine-10cm
 Kirby-POST/Supine-30cm/Kirby-POST-Supine-30cm
 "
+djfkdjfkdjfkdfjdsd
 
 :<<haha
 pathList="
