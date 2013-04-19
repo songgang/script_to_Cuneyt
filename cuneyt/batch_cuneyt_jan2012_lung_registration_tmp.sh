@@ -128,7 +128,7 @@ adfadsfasdfadsffdfd
 
 
 
-
+: <<jfkdajfkd33df
 regList="
 Hondo-POST
 Prone-30cm
@@ -186,6 +186,19 @@ Kirby-POST
 Supine-30cm
 Supine-10cm
 "
+jfkdajfkd33df
+
+regList="
+Kirby-PRE
+Prone-30cm
+Prone-10cm
+
+Kirby-PRE
+Supine-30cm
+Supine-10cm
+"
+
+
 
 regList=( $regList ) # convert to array from string
 nbImg=`echo ${#regList[@]} / 3 | bc` # get number of elements in array
