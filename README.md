@@ -41,7 +41,6 @@ batch_lung_convert_mask_Mar2013.sh
 3.1 Batch registration + compute strain:
 batch_cuneyt_jan2012_lung_registration_tmp.sh
 
-
 It will iterate over a list of subjects. The subject list should be easily idetified in the begining of the script. For each subject, it will call 
 cuneyt_jan2012_lung_registration_with_mask_tmp.sh
 
