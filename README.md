@@ -47,10 +47,10 @@ cuneyt_jan2012_lung_registration_with_mask_tmp.sh
 (This needs bash. You can run it on grid using qsub, or just one by one by changing the line containing "qsub" to its equivalent part like using "bash".)
 
 3.2 After the batch is completed, call the follow script to collect all the numbers into .csv files.
-	read_results.pl
+	read_results_Mar2013.pl
 (This needs perl.)
 
-3.3 Convert deformation files to VTK
+3.3 Convert deformation files to VTK (TODO: needs confirm)
 batch_lung_convert_deformation_field_to_vtk.sh
 
 It will iterate over a list of subjects. For each subject, it will call

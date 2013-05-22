@@ -4,10 +4,10 @@ $outputDir = '/home/songgang/project/Cuneyt/Jan2012/output_Mar13_2013';
 #'/home/songgang/project/Cuneyt/Jan2012/output';
 #'/home/tustison/Data/TakahashiDogData/AdditionalData/ImageVolumes/';
 
-$dogs[0] = 'Hondo';
-push @dogs, 'Irving';
-push @dogs, 'Japser';
-push @dogs, 'Kirby';
+$dogs[0] = 'Jasper';
+# push @dogs, 'Irving';
+# push @dogs, 'Japser';
+# push @dogs, 'Kirby';
 
 $timings[0] = 'PRE';
 push @timings, 'POST';
