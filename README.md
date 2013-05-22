@@ -36,7 +36,7 @@ under the folder cuneyt
 3.	Execute Scripts (bash + perl)
 
 3.0 Generate whole lung masks from Cuneyt's provided lobe masks, simply merging them into one file
-
+batch_lung_convert_mask_Mar2013.sh
 
 3.1 Batch registration + compute strain:
 batch_cuneyt_jan2012_lung_registration_tmp.sh
