@@ -61,7 +61,7 @@ for (( i=0; i<${#lobes[@]}; i++ ))
 do
   echo "lobe $i: ${lobes[$i]}"
 
-  inputMaskFile=$inputDir/MaskFiles/${lobes[$i]}-$imgname.hdr
+  inputMaskFile=$inputDir/MaskFiles/$imgname-${lobes[$i]}.hdr
   /usr/bin/perl $commonScriptDir/extract_vessel.pl $inputMaskFile $outputMaskNiftyDirectory $outputMaskMhaDirectory
 
 done;
