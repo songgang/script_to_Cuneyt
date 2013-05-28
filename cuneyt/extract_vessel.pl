@@ -27,7 +27,7 @@ print "tmpPrefix is $tmpPrefix\n";
 print "\n";
 
 # system("/bin/gzip -f ${mhaDirectory}/${outputPrefix}_fulllobe.mha");
-exit;
+# exit;
 
 
 if (1)
