@@ -4,7 +4,7 @@
 
 # currentDir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )";
 # echo $currentDir;
-commonScriptDir=/home/songgang/project/Cuneyt/Jan2012/script/SongPipeline/cuneyt_jan2012
+commonScriptDir=/home/songgang/project/Cuneyt/Jan2012/script_to_Cuneyt/cuneyt
 
 inputImg=$1;
 outputDir=$2;
