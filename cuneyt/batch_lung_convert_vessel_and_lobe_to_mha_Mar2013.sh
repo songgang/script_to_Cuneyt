@@ -1,7 +1,7 @@
 #!/bin/bash
 ## -S /bin/bash
 
-commonScriptDir=/home/songgang/project/Cuneyt/Jan2012/script/SongPipeline/cuneyt_jan2012
+commonScriptDir=/home/songgang/project/Cuneyt/Jan2012/script_to_Cuneyt/cuneyt
 
 srcDir=/home/songgang/project/Cuneyt/Jan2012/input_Mar13_2013
 dstDir=/home/songgang/project/Cuneyt/Jan2012/output_Mar13_2013
