@@ -130,11 +130,11 @@ for (( i=0; i<nbPath; i++ )); do
 	echo -e "dog: \t$dog"
 	echo -e "timing: \t$timing"
 	echo -e "pos: \t$pos"
-	echo -e "pressuure: \t$pressure"
+	echo -e "pressure: \t$pressure"
 
-  qsub -pe serial 4 -e $qsuboutDir -o $qsuboutDir -j y $commonScriptDir/convert_deformation_field_to_vtk.sh $srcDir/${pathA}.hdr
-  # bash $commonScriptDir/convert_deformation_field_to_vtk.sh $srcDir/${pathA}.hdr
+  # qsub -pe serial 4 -e $qsuboutDir -o $qsuboutDir -j y $commonScriptDir/convert_deformation_field_to_vtk_Mar2013.sh $srcDir/${pathA}.hdr $qsuboutDir
+  bash $commonScriptDir/convert_deformation_field_to_vtk_Mar2013.sh $srcDir/${pathA}.hdr $qsuboutDir
 
-	# break;
+	break;
 
 done;
