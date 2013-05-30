@@ -6,21 +6,55 @@
 # iterating over the fixed image file names
 
 
-commonScriptDir=/home/songgang/project/Cuneyt/Jan2012/script/SongPipeline/cuneyt_jan2012
+commonScriptDir=/home/songgang/project/Cuneyt/Jan2012/script_to_Cuneyt/cuneyt
 
-srcDir=/home/songgang/project/Cuneyt/Jan2012/input/gzipped
-qsuboutDir=/home/songgang/project/Cuneyt/Jan2012/output
+srcDir=/home/songgang/project/Cuneyt/Jan2012/input_Mar13_2013
+qsuboutDir=/home/songgang/project/Cuneyt/Jan2012/output_Mar13_2013
 
 # currentDir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )";
 # echo $currentDir;
 
-:<<haha
+
 pathList="
-ALVIN-PRE/SUPINE-30cm/ALVIN-PRE-SUPINE-30cm
+Hondo-POST/Prone-10cm/Hondo-POST-Prone-10cm
+Hondo-POST/Prone-30cm/Hondo-POST-Prone-30cm
+Hondo-POST/Supine-10cm/Hondo-POST-Supine-10cm
+Hondo-POST/Supine-30cm/Hondo-POST-Supine-30cm
+Hondo-PRE/Prone-10cm/Hondo-PRE-Prone-10cm
+Hondo-PRE/Prone-30cm/Hondo-PRE-Prone-30cm
+Hondo-PRE/Supine-10cm/Hondo-PRE-Supine-10cm
+Hondo-PRE/Supine-30cm/Hondo-PRE-Supine-30cm
+
+Irving-POST/Prone-10cm/Irving-POST-Prone-10cm
+Irving-POST/Prone-30cm/Irving-POST-Prone-30cm
+Irving-POST/Supine-10cm/Irving-POST-Supine-10cm
+Irving-POST/Supine-30cm/Irving-POST-Supine-30cm
+Irving-PRE/Prone-10cm/Irving-PRE-Prone-10cm
+Irving-PRE/Prone-30cm/Irving-PRE-Prone-30cm
+Irving-PRE/Supine-10cm/Irving-PRE-Supine-10cm
+Irving-PRE/Supine-30cm/Irving-PRE-Supine-30cm
+
+Jasper-POST/Prone-10cm/Jasper-POST-Prone-10cm
+Jasper-POST/Prone-30cm/Jasper-POST-Prone-30cm
+Jasper-POST/Supine-10cm/Jasper-POST-Supine-10cm
+Jasper-POST/Supine-30cm/Jasper-POST-Supine-30cm
+Jasper-PRE/Prone-10cm/Jasper-PRE-Prone-10cm
+Jasper-PRE/Prone-30cm/Jasper-PRE-Prone-30cm
+Jasper-PRE/Supine-10cm/Jasper-PRE-Supine-10cm
+Jasper-PRE/Supine-30cm/Jasper-PRE-Supine-30cm
+
+Kirby-POST/Prone-10cm/Kirby-POST-Prone-10cm
+Kirby-POST/Prone-30cm/Kirby-POST-Prone-30cm
+Kirby-POST/Supine-10cm/Kirby-POST-Supine-10cm
+Kirby-POST/Supine-30cm/Kirby-POST-Supine-30cm
+Kirby-PRE/Prone-10cm/Kirby-PRE-Prone-10cm
+Kirby-PRE/Prone-30cm/Kirby-PRE-Prone-30cm
+Kirby-PRE/Supine-10cm/Kirby-PRE-Supine-10cm
+Kirby-PRE/Supine-30cm/Kirby-PRE-Supine-30cm
 "
 haha
 
-
+:<<haha
 pathList="
 ALVIN-POST/PRONE-30cm/ALVIN-POST-PRONE-30cm
 ALVIN-POST/SUPINE-30cm/ALVIN-POST-SUPINE-30cm
@@ -51,7 +85,7 @@ GILMER-POST/SUPINE-30cm/GILMER-POST-SUPINE-30cm
 GILMER-PRE/SUPINE-30cm/GILMER-PRE-SUPINE-30cm
 
 "
-
+haha
 
 
 
