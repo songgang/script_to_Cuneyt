@@ -63,10 +63,10 @@ function ConvertDeformationToVTK
   # temporarily disabled
 $AVANTS 3 $TOTALVECTORFIELD ${PVDIR}/${dog}-${timing}-${pos}-TotalWarp 1 $FIXEDMASK
 $AVANTS2 ${PVDIR}/${dog}-${timing}-${pos}-TotalWarpFixed.txt ${PVDIR}/${dog}-${timing}-${pos}-TotalWarpMoving.txt ${PVDIR}/${dog}-${timing}-${pos}-TotalWarp 2
-/bin/gzip ${PVDIR}/${dog}-${timing}-${pos}-TotalWarpFixed.txt
-/bin/gzip ${PVDIR}/${dog}-${timing}-${pos}-TotalWarpMoving.txt
-/bin/gzip ${PVDIR}/${dog}-${timing}-${pos}-TotalWarpFixed.vtk
-/bin/gzip ${PVDIR}/${dog}-${timing}-${pos}-TotalWarpMoving.vtk
+/bin/gzip -f ${PVDIR}/${dog}-${timing}-${pos}-TotalWarpFixed.txt
+/bin/gzip -f ${PVDIR}/${dog}-${timing}-${pos}-TotalWarpMoving.txt
+/bin/gzip -f ${PVDIR}/${dog}-${timing}-${pos}-TotalWarpFixed.vtk
+/bin/gzip -f ${PVDIR}/${dog}-${timing}-${pos}-TotalWarpMoving.vtk
 
 #May30: ignore recomputing since it has already been done in the registration
 # recomputing principle vector field in the same directory of total vector field
