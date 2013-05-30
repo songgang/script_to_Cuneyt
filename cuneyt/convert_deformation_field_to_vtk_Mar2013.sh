@@ -38,7 +38,7 @@ function ConvertDeformationToVTK
   # AVANTS=/home/tustison/Utilities/bin64/ConvertDeformationFieldToAvantsLandmarkFiles
   AVANTS2=/home/tustison/Utilities/bin64/ConvertAvantsLandmarkFileToVTK
 
-  # TOTALVECTORFIELD=$OUTPUTDIR/${dog}-${timing}/${pos}-fix-30cm-mov-10cm/${dog}-${timing}-${pos}-fix-30cm-mov-10cmTotalWarp-smooth.nii.gz
+  TOTALVECTORFIELD=$OUTPUTDIR/${dog}-${timing}/${pos}-fix-30cm-mov-10cm/${dog}-${timing}-${pos}-fix-30cm-mov-10cmTotalWarp-smooth.nii.gz
 
   FIXEDMASK=$OUTPUTDIR/${dog}-${timing}/${pos}-${pressure}/${dog}-${timing}-${pos}-${pressure}-lungmask.nii.gz
 
@@ -61,12 +61,12 @@ function ConvertDeformationToVTK
 
 
   # temporarily disabled
-# $AVANTS 3 $TOTALVECTORFIELD ${PVDIR}/${dog}-${timing}-${pos}-TotalWarp 1 $FIXEDMASK
-# $AVANTS2 ${PVDIR}/${dog}-${timing}-${pos}-TotalWarpFixed.txt ${PVDIR}/${dog}-${timing}-${pos}-TotalWarpMoving.txt ${PVDIR}/${dog}-${timing}-${pos}-TotalWarp 2
-#/bin/gzip ${PVDIR}/${dog}-${timing}-${pos}-TotalWarpFixed.txt
-#/bin/gzip ${PVDIR}/${dog}-${timing}-${pos}-TotalWarpMoving.txt
-#/bin/gzip ${PVDIR}/${dog}-${timing}-${pos}-TotalWarpFixed.vtk
-#/bin/gzip ${PVDIR}/${dog}-${timing}-${pos}-TotalWarpMoving.vtk
+$AVANTS 3 $TOTALVECTORFIELD ${PVDIR}/${dog}-${timing}-${pos}-TotalWarp 1 $FIXEDMASK
+$AVANTS2 ${PVDIR}/${dog}-${timing}-${pos}-TotalWarpFixed.txt ${PVDIR}/${dog}-${timing}-${pos}-TotalWarpMoving.txt ${PVDIR}/${dog}-${timing}-${pos}-TotalWarp 2
+/bin/gzip ${PVDIR}/${dog}-${timing}-${pos}-TotalWarpFixed.txt
+/bin/gzip ${PVDIR}/${dog}-${timing}-${pos}-TotalWarpMoving.txt
+/bin/gzip ${PVDIR}/${dog}-${timing}-${pos}-TotalWarpFixed.vtk
+/bin/gzip ${PVDIR}/${dog}-${timing}-${pos}-TotalWarpMoving.vtk
 
 #May30: ignore recomputing since it has already been done in the registration
 # recomputing principle vector field in the same directory of total vector field
