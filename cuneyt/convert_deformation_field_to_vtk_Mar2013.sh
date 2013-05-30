@@ -63,10 +63,12 @@ function ConvertDeformationToVTK
   # temporarily disabled
 $AVANTS 3 $TOTALVECTORFIELD ${PVDIR}/${dog}-${timing}-${pos}-TotalWarp 1 $FIXEDMASK
 $AVANTS2 ${PVDIR}/${dog}-${timing}-${pos}-TotalWarpFixed.txt ${PVDIR}/${dog}-${timing}-${pos}-TotalWarpMoving.txt ${PVDIR}/${dog}-${timing}-${pos}-TotalWarp 2
-/bin/gzip -f ${PVDIR}/${dog}-${timing}-${pos}-TotalWarpFixed.txt
-/bin/gzip -f ${PVDIR}/${dog}-${timing}-${pos}-TotalWarpMoving.txt
-/bin/gzip -f ${PVDIR}/${dog}-${timing}-${pos}-TotalWarpFixed.vtk
-/bin/gzip -f ${PVDIR}/${dog}-${timing}-${pos}-TotalWarpMoving.vtk
+
+# temporarily disable gzip: will fail randomly
+# /bin/gzip -f ${PVDIR}/${dog}-${timing}-${pos}-TotalWarpFixed.txt
+# /bin/gzip -f ${PVDIR}/${dog}-${timing}-${pos}-TotalWarpMoving.txt
+# /bin/gzip -f ${PVDIR}/${dog}-${timing}-${pos}-TotalWarpFixed.vtk
+# /bin/gzip -f ${PVDIR}/${dog}-${timing}-${pos}-TotalWarpMoving.vtk
 
 #May30: ignore recomputing since it has already been done in the registration
 # recomputing principle vector field in the same directory of total vector field
@@ -92,11 +94,13 @@ PS1VECTORFIELD=${PSVECOUTPUTPRE}1.nii.gz
 
 $AVANTS 3 $PS1VECTORFIELD ${PVDIR}/${dog}-${timing}-${pos}-PS1 1 $FIXEDMASK
 $AVANTS2 ${PVDIR}/${dog}-${timing}-${pos}-PS1Fixed.txt ${PVDIR}/${dog}-${timing}-${pos}-PS1Moving.txt ${PVDIR}/${dog}-${timing}-${pos}-PS1 2
+
+# temporarily disable gzip: will fail randomly
 # zip the files
-/bin/gzip -f ${PVDIR}/${dog}-${timing}-${pos}-PS1Fixed.txt
-/bin/gzip -f ${PVDIR}/${dog}-${timing}-${pos}-PS1Moving.txt
-/bin/gzip -f ${PVDIR}/${dog}-${timing}-${pos}-PS1Fixed.vtk
-/bin/gzip -f ${PVDIR}/${dog}-${timing}-${pos}-PS1Moving.vtk
+# /bin/gzip -f ${PVDIR}/${dog}-${timing}-${pos}-PS1Fixed.txt
+# /bin/gzip -f ${PVDIR}/${dog}-${timing}-${pos}-PS1Moving.txt
+# /bin/gzip -f ${PVDIR}/${dog}-${timing}-${pos}-PS1Fixed.vtk
+# /bin/gzip -f ${PVDIR}/${dog}-${timing}-${pos}-PS1Moving.vtk
 }
 
 ConvertDeformationToVTK $ORIGFIXEDIMAGE 
